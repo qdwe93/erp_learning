@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAP Private Cloud 운영 학습 가이드</title>
+<meta name="description" content="SAP Private Cloud 운영자가 담당 모듈의 SAP 공식 과정, 실습, 한국어 제공 여부를 찾는 참조 사이트">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E306D'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='15' font-weight='bold' fill='white' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a href="#main" class="sr-only">본문으로 건너뛰기</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="주요">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span class="brand-text"><b>ERP 운영 학습 가이드</b><span>SAP 공식 과정 &middot; 실습 &middot; 한국어 안내</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" data-nav-menu>
+          <a href="index.html" aria-current="page">홈</a>
+          <a href="index.html#modules">모듈별 찾기</a>
+          <a href="custom-reports.html">ABAP · RAP 학습</a>
+          <a href="conversion.html">System Conversion</a>
+          <a href="access.html">실습 · 한국어</a>
+          <a href="start.html">시작하기</a>
+      </div>
+      <a class="btn btn-primary btn-sm nav-cta" href="start.html">시작하기</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-eyebrow">SAP 공식 학습자료를 한곳에서</span>
+        <h1>내 모듈에 맞는<br><span class="accent">SAP 공식 교육</span>을 찾습니다</h1>
+        <p class="hero-lead">
+          익숙한 모듈 코드로 SAP 현재 명칭과 공식 과정을 찾을 수 있게 정리했습니다.
+          전체를 들으라는 뜻이 아닙니다. 지금 필요한 것만 골라 쓰면 됩니다.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#modules">내 모듈 찾기 <span aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn-ghost" href="start.html">처음이라면 시작하기</a>
+        </div>
+      </div>
+      <div class="hero-figure">
+        <!-- IMAGE SLOT: hero. assets/img/NEEDED.md 참조 -->
+        <img src="assets/img/hero.webp" alt="SAP 공식 학습 자료가 모듈, 과정, 실습으로 연결되는 구조를 나타낸 일러스트" width="1200" height="900">
+      </div>
+    </div>
+
+    <div class="strip">
+      <div class="strip-item">
+        <span class="strip-ico" style="background:rgba(0,114,198,.10);color:#005A9E" aria-hidden="true">1</span>
+        <div><b>익숙한 모듈명으로 찾기</b><span>MM &rarr; Sourcing and Procurement처럼 모듈 코드와 SAP 현재 명칭을 함께 보여줍니다</span></div>
+      </div>
+      <div class="strip-item">
+        <span class="strip-ico" style="background:rgba(0,154,147,.11);color:#00726D" aria-hidden="true">2</span>
+        <div><b>한국어 제공 표시</b><span>과정마다 한국어판 유무를 표시합니다. 순서를 정하는 정보이지 제외 기준이 아닙니다</span></div>
+      </div>
+      <div class="strip-item">
+        <span class="strip-ico" style="background:rgba(244,119,37,.11);color:#C4581A" aria-hidden="true">3</span>
+        <div><b>실습 시스템 확인</b><span>학습자별 등록, 이용시간 제한 없음, 동시 2개까지</span></div>
+      </div>
+      <div class="strip-item">
+        <span class="strip-ico" style="background:rgba(234,0,44,.09);color:#B80023" aria-hidden="true">4</span>
+        <div><b>확인 상태를 명시</b><span>아직 확인하지 못한 항목과 확인된 내용을 분명히 구분합니다</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="modules">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">모듈별 찾기</span>
+      <h2>담당 모듈을 고르세요</h2>
+      <p>모듈 코드나 한글 이름으로 바로 검색할 수 있습니다.</p>
+    </div>
+
+    <div class="finder">
+      <label class="sr-only" for="modsearch">모듈 검색</label>
+      <input id="modsearch" type="search" placeholder="MM, 자재, Sourcing ... 무엇이든 입력" autocomplete="off" data-search-input>
+      <span class="finder-ico" aria-hidden="true">&#9906;</span>
+      <div class="finder-count" data-search-count aria-live="polite"></div>
+    </div>
+
+    <h3 class="sr-only">전용 Learning Journey가 있는 모듈</h3>
+    <div class="mod-grid" data-search-scope>
+      <a class="mod-card" style="--mc: var(--m-mm); --mc-ink: var(--m-mm-ink); --mc-soft: color-mix(in srgb, var(--m-mm) 12%, white);" href="modules/mm.html" data-search="mm 자재 · 구매 sourcing and procurement">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">MM</span>
+          <div>
+            <h3>자재 · 구매</h3>
+            <span class="mod-code">Learning Journey</span>
+          </div>
+        </div>
+        <p class="mod-sap">Sourcing and Procurement</p>
+        <div class="mod-meta"><span class="badge badge-time">5,592분</span><span class="badge badge-ko-hub">한국어 일부</span></div>
+        <div class="mod-arrow">자세히 보기 <span aria-hidden="true">&rarr;</span></div>
+      </div></a>
+      <a class="mod-card" style="--mc: var(--m-sd); --mc-ink: var(--m-sd-ink); --mc-soft: color-mix(in srgb, var(--m-sd) 12%, white);" href="modules/sd.html" data-search="sd 영업 sales">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">SD</span>
+          <div>
+            <h3>영업</h3>
+            <span class="mod-code">Learning Journey</span>
+          </div>
+        </div>
+        <p class="mod-sap">Sales</p>
+        <div class="mod-meta"><span class="badge badge-time">4,786분</span><span class="badge badge-ko">한국어</span></div>
+        <div class="mod-arrow">자세히 보기 <span aria-hidden="true">&rarr;</span></div>
+      </div></a>
+      <a class="mod-card" style="--mc: var(--m-pp); --mc-ink: var(--m-pp-ink); --mc-soft: color-mix(in srgb, var(--m-pp) 12%, white);" href="modules/pp.html" data-search="pp 생산 manufacturing">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">PP</span>
+          <div>
+            <h3>생산</h3>
+            <span class="mod-code">Learning Journey</span>
+          </div>
+        </div>
+        <p class="mod-sap">Manufacturing</p>
+        <div class="mod-meta"><span class="badge badge-time">4,629분</span><span class="badge badge-ko">한국어</span></div>
+        <div class="mod-arrow">자세히 보기 <span aria-hidden="true">&rarr;</span></div>
+      </div></a>
+      <a class="mod-card" style="--mc: var(--m-pm); --mc-ink: var(--m-pm-ink); --mc-soft: color-mix(in srgb, var(--m-pm) 12%, white);" href="modules/pm.html" data-search="pm 설비보전 asset management (eam)">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">PM</span>
+          <div>
+            <h3>설비보전</h3>
+            <span class="mod-code">Learning Journey</span>
+          </div>
+        </div>
+        <p class="mod-sap">Asset Management (EAM)</p>
+        <div class="mod-meta"><span class="badge badge-time">3,392분</span><span class="badge badge-ko-hub">한국어 · LHub</span></div>
+        <div class="mod-arrow">자세히 보기 <span aria-hidden="true">&rarr;</span></div>
+      </div></a>
+      <a class="mod-card" style="--mc: var(--m-fi); --mc-ink: var(--m-fi-ink); --mc-soft: color-mix(in srgb, var(--m-fi) 12%, white);" href="modules/fi.html" data-search="fi 재무회계 financial accounting">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">FI</span>
+          <div>
+            <h3>재무회계</h3>
+            <span class="mod-code">Learning Journey</span>
+          </div>
+        </div>
+        <p class="mod-sap">Financial Accounting</p>
+        <div class="mod-meta"><span class="badge badge-time">4,677분</span><span class="badge badge-en">영어</span><span class="badge badge-lab">실습</span></div>
+        <div class="mod-arrow">자세히 보기 <span aria-hidden="true">&rarr;</span></div>
+      </div></a>
+      <a class="mod-card" style="--mc: var(--m-co); --mc-ink: var(--m-co-ink); --mc-soft: color-mix(in srgb, var(--m-co) 12%, white);" href="modules/co.html" data-search="co 관리회계 management accounting">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">CO</span>
+          <div>
+            <h3>관리회계</h3>
+            <span class="mod-code">Learning Journey</span>
+          </div>
+        </div>
+        <p class="mod-sap">Management Accounting</p>
+        <div class="mod-meta"><span class="badge badge-time">6,382분</span><span class="badge badge-ko-hub">한국어 일부</span></div>
+        <div class="mod-arrow">자세히 보기 <span aria-hidden="true">&rarr;</span></div>
+      </div></a>
+      <a class="mod-card" style="--mc: var(--m-ewm); --mc-ink: var(--m-ewm-ink); --mc-soft: color-mix(in srgb, var(--m-ewm) 12%, white);" href="modules/ewm.html" data-search="ewm 창고 extended warehouse management">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">EWM</span>
+          <div>
+            <h3>창고</h3>
+            <span class="mod-code">Learning Journey</span>
+          </div>
+        </div>
+        <p class="mod-sap">Extended Warehouse Management</p>
+        <div class="mod-meta"><span class="badge badge-time">1,844분</span><span class="badge badge-ko-hub">한국어 일부</span><span class="badge badge-lab">실습</span></div>
+        <div class="mod-arrow">자세히 보기 <span aria-hidden="true">&rarr;</span></div>
+      </div></a>
+      <a class="mod-card" style="--mc: var(--m-tm); --mc-ink: var(--m-tm-ink); --mc-soft: color-mix(in srgb, var(--m-tm) 12%, white);" href="modules/tm.html" data-search="tm 운송 transportation management">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">TM</span>
+          <div>
+            <h3>운송</h3>
+            <span class="mod-code">Learning Journey</span>
+          </div>
+        </div>
+        <p class="mod-sap">Transportation Management</p>
+        <div class="mod-meta"><span class="badge badge-time">2,086분</span><span class="badge badge-ko-hub">한국어 · LHub</span><span class="badge badge-lab">실습</span></div>
+        <div class="mod-arrow">자세히 보기 <span aria-hidden="true">&rarr;</span></div>
+      </div></a>
+    </div>
+
+    <div class="sec-head left" style="margin:56px 0 20px">
+      <h2 style="font-size:21px">과정 단위로만 제공되는 영역</h2>
+      <p>전용 Learning Journey가 없습니다. 개별 과정으로 접근합니다.</p>
+    </div>
+    <div class="mod-grid" data-search-scope>
+      <a class="mod-card tier-course" style="--mc: var(--m-aa); --mc-ink: var(--m-aa-ink); --mc-soft: color-mix(in srgb, var(--m-aa) 12%, white);" href="modules/fi-aa.html" data-search="fi-aa 자산회계 asset accounting">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">FI-AA</span>
+          <div>
+            <h3>자산회계</h3>
+            <span class="mod-code">FI 하위</span>
+          </div>
+        </div>
+        <p class="mod-sap">Asset Accounting</p>
+        <div class="mod-meta"><span class="badge badge-tier">과정 단위</span><span class="badge badge-en">영어</span><span class="badge badge-lab">실습</span></div>
+        <div class="mod-arrow">자세히 보기 <span aria-hidden="true">&rarr;</span></div>
+      </div></a>
+      <a class="mod-card tier-course" style="--mc: var(--m-hr); --mc-ink: var(--m-hr-ink); --mc-soft: color-mix(in srgb, var(--m-hr) 12%, white);" href="modules/hr.html" data-search="hr 인사 human capital management">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">HR</span>
+          <div>
+            <h3>인사</h3>
+            <span class="mod-code">과정 단위</span>
+          </div>
+        </div>
+        <p class="mod-sap">Human Capital Management</p>
+        <div class="mod-meta"><span class="badge badge-tier">과정 단위</span><span class="badge badge-ko">한국어</span><span class="badge badge-lab">실습</span></div>
+        <div class="mod-arrow">자세히 보기 <span aria-hidden="true">&rarr;</span></div>
+      </div></a>
+      <a class="mod-card tier-course" style="--mc: var(--m-tr); --mc-ink: var(--m-tr-ink); --mc-soft: color-mix(in srgb, var(--m-tr) 12%, white);" href="modules/tr.html" data-search="tr 자금 treasury and working capital management">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">TR</span>
+          <div>
+            <h3>자금</h3>
+            <span class="mod-code">과정 단위</span>
+          </div>
+        </div>
+        <p class="mod-sap">Treasury and working capital management</p>
+        <div class="mod-meta"><span class="badge badge-tier">과정 단위</span><span class="badge badge-ko">한국어</span></div>
+        <div class="mod-arrow">자세히 보기 <span aria-hidden="true">&rarr;</span></div>
+      </div></a>
+      <a class="mod-card tier-course" style="--mc: var(--m-ec); --mc-ink: var(--m-ec-ink); --mc-soft: color-mix(in srgb, var(--m-ec) 12%, white);" href="modules/group-reporting.html" data-search="ec-cs 연결결산 group reporting">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">EC-CS</span>
+          <div>
+            <h3>연결결산</h3>
+            <span class="mod-code">과정 단위</span>
+          </div>
+        </div>
+        <p class="mod-sap">Group Reporting</p>
+        <div class="mod-meta"><span class="badge badge-tier">과정 단위</span><span class="badge badge-ko-hub">한국어 · LHub</span><span class="badge badge-lab">실습</span></div>
+        <div class="mod-arrow">자세히 보기 <span aria-hidden="true">&rarr;</span></div>
+      </div></a>
+    </div>
+
+    <div class="sec-head left" style="margin:56px 0 20px">
+      <h2 style="font-size:21px">확인된 공식 과정이 없는 영역</h2>
+      <p>learning.sap.com에서 확인된 과정이 없는 경우만 표시합니다.</p>
+    </div>
+    <div class="mod-grid" data-search-scope>
+      <div class="mod-card tier-none" style="--mc: var(--m-tr); --mc-ink: var(--m-tr-ink); --mc-soft: color-mix(in srgb, var(--m-tr) 12%, white);" data-search="cfin central finance central finance">
+      <div class="mod-band" aria-hidden="true"></div>
+      <div class="mod-body">
+        <div class="mod-top">
+          <span class="mod-ico" aria-hidden="true">CFIN</span>
+          <div>
+            <h3>Central Finance</h3>
+            <span class="mod-code">공식 과정 미확인</span>
+          </div>
+        </div>
+        <p class="mod-sap">Central Finance</p>
+        <div class="mod-meta"><span class="badge badge-none">확인된 과정 없음</span></div>
+        
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="wrap">
+    <div class="banner">
+      <div class="banner-inner">
+        <div>
+          <h2>ABAP · CDS · RAP 공식 학습경로</h2>
+          <p>
+            ABAP 기초부터 CDS 모델링, Clean Core, RAP 기반 OData 서비스까지
+            SAP 공식 과정의 권장 순서와 실습 정보를 정리했습니다.
+          </p>
+          <a class="btn btn-light" href="custom-reports.html">ABAP · RAP 학습경로 보기 <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="banner-stats">
+          <div class="banner-stat"><b>5개</b><span>ABAP 공식 과정</span></div>
+          <div class="banner-stat"><b>4/5</b><span>한국어 제공</span></div>
+          <div class="banner-stat"><b>5개</b><span>실습 시스템 제공</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">다음</span>
+      <h2>모듈 외에 확인할 것</h2>
+    </div>
+    <div class="rel-grid">
+      <a class="rel-card" href="conversion.html"><b>System Conversion</b><span>공식 전환 학습경로, 커스터마이징 점검, Clean Core 학습</span></a>
+      <a class="rel-card" href="access.html"><b>실습 · 한국어 안내</b><span>Learning Hub 접근 방법, 실습 등록 규칙, 한국어 제공 현황</span></a>
+      <a class="rel-card" href="start.html"><b>시작하기</b><span>처음 왔을 때 무엇부터 볼지, 공통 기반 과정, 자기점검</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">L</span>
+          <span class="brand-text"><b>ERP 운영 학습 가이드</b><span>SAP 공식 과정 &middot; 실습 &middot; 한국어 안내</span></span>
+        </a>
+        <p>SAP가 공식으로 제공하는 학습자료를 담당 모듈 기준으로 찾을 수 있게 정리한 참조 사이트입니다. 커리큘럼이 아니며, 필요한 것만 골라 쓰면 됩니다.</p>
+      </div>
+      <div class="foot-col">
+        <b>찾기</b>
+        <ul>
+          <li><a href="index.html#modules">모듈별 찾기</a></li>
+          <li><a href="custom-reports.html">ABAP · RAP 학습</a></li>
+          <li><a href="conversion.html">System Conversion</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <b>준비</b>
+        <ul>
+          <li><a href="start.html">시작하기</a></li>
+          <li><a href="access.html">실습 · 한국어 안내</a></li>
+          <li><a href="access.html#korean">한국어 제공 현황</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <b>SAP 공식</b>
+        <ul>
+          <li><a href="https://learning.sap.com" target="_blank" rel="noopener">SAP Learning</a></li>
+          <li><a href="https://help.sap.com" target="_blank" rel="noopener">SAP Help Portal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>모든 과정 정보는 <strong>2026-09-02</strong> 기준으로 SAP 공식 페이지에서 확인한 것입니다. 확인하지 않은 항목은 &lsquo;미확인&rsquo;으로 표시했습니다.</p>
+      <p>비공식 학습 링크 모음이며 SAP SE의 공식 사이트가 아닙니다. SAP 및 관련 제품명은 SAP SE 또는 계열사의 상표입니다.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

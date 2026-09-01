@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>System Conversion — ERP 운영 학습 가이드</title>
+<meta name="description" content="SAP S/4HANA System Conversion 관련 SAP 공식 학습자료">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E306D'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='15' font-weight='bold' fill='white' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a href="#main" class="sr-only">본문으로 건너뛰기</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="주요">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span class="brand-text"><b>ERP 운영 학습 가이드</b><span>SAP 공식 과정 &middot; 실습 &middot; 한국어 안내</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" data-nav-menu>
+          <a href="index.html">홈</a>
+          <a href="index.html#modules">모듈별 찾기</a>
+          <a href="custom-reports.html">ABAP · RAP 학습</a>
+          <a href="conversion.html" aria-current="page">System Conversion</a>
+          <a href="access.html">실습 · 한국어</a>
+          <a href="start.html">시작하기</a>
+      </div>
+      <a class="btn btn-primary btn-sm nav-cta" href="start.html">시작하기</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="page-top" style="--mc: var(--m-fi)">
+  <div class="page-top-band" aria-hidden="true"></div>
+  <div class="wrap page-top-inner">
+    <div class="crumb"><a href="index.html">홈</a><span>&rsaquo;</span>System Conversion</div>
+    <h1>System Conversion</h1>
+    <p class="page-sub">SAP S/4HANA System Conversion과 관련된 공식 학습자료입니다.</p>
+    <div class="page-tags"><span class="badge badge-time">LSC00878 · 2,400분</span><span class="badge badge-en">Advanced</span></div>
+  </div>
+</div>
+<div class="wrap doc">
+  <div class="doc-grid">
+    <nav class="toc" aria-label="이 페이지 목차">
+      <b>이 페이지</b>
+      <ul><li><a href="#materials">공식 자료</a></li><li><a href="#custom">커스텀 코드</a></li><li><a href="#cleancore">Clean Core 판정</a></li><li><a href="#next">다음</a></li></ul>
+    </nav>
+    <div>
+      <div class="note">
+        <span class="note-title">이 페이지의 범위</span>
+        SAP S/4HANA <strong>system conversion과 upgrade</strong>를 학습할 수 있는 공식 자료입니다.
+        업무 모듈 과정은 <a href="index.html#modules">모듈별 찾기</a>에 있습니다.
+      </div>
+
+      <h2 id="materials">공식 자료</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>대상</th><th>자료</th><th class="num">시간(분)</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>전환 전체 절차</td>
+              <td><a href="https://learning.sap.com/learning-journeys/converting-and-upgrading-sap-s-4hana-systems" target="_blank" rel="noopener">Converting and Upgrading SAP S/4HANA Systems</a> <code>LSC00878</code> <span class="badge badge-en">Advanced</span></td>
+              <td class="num">2,400</td>
+            </tr>
+            <tr>
+              <td>전환 준비 · 후속 활동</td>
+              <td><a href="https://learning.sap.com/courses/implementing-sap-s-4hana-cloud-private-edition" target="_blank" rel="noopener">Implementing SAP S/4HANA Cloud Private Edition</a> <code>S4C03</code> 내 conversion lesson</td>
+              <td class="num">730</td>
+            </tr>
+            <tr>
+              <td>전환 후 커스터마이징 점검</td>
+              <td><a href="https://learning.sap.com/courses/implementing-sap-s-4hana-cloud-private-edition/analyzing-customizations-after-system-conversion_b9083e6d-e207-4578-8aa6-6c85cb42974a" target="_blank" rel="noopener">Analyzing Customizations after System Conversion</a> lesson</td>
+              <td class="num">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:13.5px;color:var(--ink-3)"><code>LSC00878</code> 안의 본 과정은 로그인 후에 열립니다.</p>
+
+      <h2 id="custom">커스텀 코드 학습</h2>
+      <p>
+        System Conversion 과정은 <strong>커스텀 코드 판정과 Clean Core 원칙</strong>을 함께 이해해야 합니다.
+        관련 도구와 학습경로는 별도 페이지에 정리했습니다.
+      </p>
+      <div class="rel-grid" style="margin-top:14px">
+        <a class="rel-card" href="custom-reports.html"><b>ABAP · RAP 학습</b><span>ABAP + CDS + RAP 학습경로와 커스텀 코드 판정 도구</span></a>
+      </div>
+
+      <h2 id="cleancore">Clean Core 판정</h2>
+      <p>
+        <a href="https://learning.sap.com/courses/practicing-clean-core-extensibility-for-sap-s-4hana-cloud" target="_blank" rel="noopener">Practicing Clean Core Extensibility</a>
+        <code>S4D426</code> (478분, <span class="badge badge-ko">한국어</span>)의 Unit 1이 커스텀 코드 검토를 다룹니다.
+      </p>
+      <ul>
+        <li>사용량 데이터 수집 (ABAP Call Monitor)</li>
+        <li>레거시 수정 · 복사 · 확장 검토</li>
+        <li>Custom Code Migration 앱으로 전환 범위 지정</li>
+        <li>시스템 전환과 신규 구축 비교</li>
+      </ul>
+      <p>Unit 5는 Private Edition 시스템의 개발 환경 설정을 다룹니다 — 소프트웨어 컴포넌트, 개발자 권한, ABAP 언어 버전 배정.</p>
+
+      <h2 id="next">다음</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="custom-reports.html"><b>ABAP · RAP 학습</b><span>개발 운영자를 위한 공식 학습경로</span></a>
+        <a class="rel-card" href="access.html"><b>실습 · 한국어</b><span>실습 시스템 등록 조건</span></a>
+        <a class="rel-card" href="index.html#modules"><b>모듈별 찾기</b><span>업무 모듈 과정</span></a>
+      </div></div>
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">L</span>
+          <span class="brand-text"><b>ERP 운영 학습 가이드</b><span>SAP 공식 과정 &middot; 실습 &middot; 한국어 안내</span></span>
+        </a>
+        <p>SAP가 공식으로 제공하는 학습자료를 담당 모듈 기준으로 찾을 수 있게 정리한 참조 사이트입니다. 커리큘럼이 아니며, 필요한 것만 골라 쓰면 됩니다.</p>
+      </div>
+      <div class="foot-col">
+        <b>찾기</b>
+        <ul>
+          <li><a href="index.html#modules">모듈별 찾기</a></li>
+          <li><a href="custom-reports.html">ABAP · RAP 학습</a></li>
+          <li><a href="conversion.html">System Conversion</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <b>준비</b>
+        <ul>
+          <li><a href="start.html">시작하기</a></li>
+          <li><a href="access.html">실습 · 한국어 안내</a></li>
+          <li><a href="access.html#korean">한국어 제공 현황</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <b>SAP 공식</b>
+        <ul>
+          <li><a href="https://learning.sap.com" target="_blank" rel="noopener">SAP Learning</a></li>
+          <li><a href="https://help.sap.com" target="_blank" rel="noopener">SAP Help Portal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>모든 과정 정보는 <strong>2026-09-02</strong> 기준으로 SAP 공식 페이지에서 확인한 것입니다. 확인하지 않은 항목은 &lsquo;미확인&rsquo;으로 표시했습니다.</p>
+      <p>비공식 학습 링크 모음이며 SAP SE의 공식 사이트가 아닙니다. SAP 및 관련 제품명은 SAP SE 또는 계열사의 상표입니다.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

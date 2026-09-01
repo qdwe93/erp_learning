@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ABAP · RAP 학습 — ERP 운영 학습 가이드</title>
+<meta name="description" content="ABAP, CDS, Clean Core, RAP 기반 OData를 위한 SAP 공식 학습경로">
+<meta name="color-scheme" content="light">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E306D'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='15' font-weight='bold' fill='white' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a href="#main" class="sr-only">본문으로 건너뛰기</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="주요">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span class="brand-text"><b>ERP 운영 학습 가이드</b><span>SAP 공식 과정 &middot; 실습 &middot; 한국어 안내</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" data-nav-menu>
+          <a href="index.html">홈</a>
+          <a href="index.html#modules">모듈별 찾기</a>
+          <a href="custom-reports.html" aria-current="page">ABAP · RAP 학습</a>
+          <a href="conversion.html">System Conversion</a>
+          <a href="access.html">실습 · 한국어</a>
+          <a href="start.html">시작하기</a>
+      </div>
+      <a class="btn btn-primary btn-sm nav-cta" href="start.html">시작하기</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="page-top" style="--mc: var(--m-abap)">
+  <div class="page-top-band" aria-hidden="true"></div>
+  <div class="wrap page-top-inner">
+    <div class="crumb"><a href="index.html">홈</a><span>&rsaquo;</span>ABAP · RAP 학습</div>
+    <h1>ABAP · RAP 학습</h1>
+    <p class="page-sub">ABAP 기초부터 CDS, Clean Core, RAP 기반 OData까지 이어지는 SAP 공식 학습경로입니다.</p>
+    <div class="page-tags"><span class="badge badge-time">5개 과정 · 5,403분</span><span class="badge badge-ko">4개 한국어</span><span class="badge badge-lab">전 과정 실습</span></div>
+  </div>
+</div>
+<div class="wrap doc">
+  <div class="doc-grid">
+    <nav class="toc" aria-label="이 페이지 목차">
+      <b>이 페이지</b>
+      <ul><li><a href="#chain">공식 학습경로 5단계</a></li><li><a href="#scope">공식 과정 범위</a></li><li><a href="#judge">커스텀 코드 판정</a></li><li><a href="#fiori">Fiori Elements</a></li><li><a href="#lab">실습 환경</a></li><li><a href="#next">다음</a></li></ul>
+    </nav>
+    <div>
+      <div class="note">
+        <span class="note-title">이 페이지의 범위</span>
+        ABAP 기초부터 <strong>CDS 데이터 모델</strong>, Clean Core, <strong>RAP 기반 OData 서비스</strong>까지
+        개발 운영자가 활용할 SAP 공식 과정만 순서대로 정리합니다.
+      </div>
+
+      <h2 id="chain">공식 학습경로 5단계</h2>
+      <p>
+        <a href="https://learning.sap.com/learning-journeys/acquiring-core-abap-skills" target="_blank" rel="noopener">Acquiring Core ABAP Skills</a>
+        <code>LSC00935</code> 한 journey 안에 순서대로 들어 있습니다. 총 5,403분입니다.
+        이미 역량을 갖춘 개발자는 앞 단계를 건너뛰면 됩니다.
+      </p>
+      <div class="steps" style="margin:24px 0 28px">
+      <div class="step">
+        <code>S4D400</code>
+        <b>Learning Basic ABAP Programming</b>
+        <span>ABAP 기본 문법, 로컬 클래스, 디버깅</span>
+        <span class="badge badge-ko">한국어</span>
+      </div>
+      <div class="step">
+        <code>S4D401</code>
+        <b>Deepening Your ABAP Programming Knowledge</b>
+        <span>Code Pushdown(ABAP SQL), 성능 측정, ABAP Unit, ATC</span>
+        <span class="badge badge-ko">한국어</span>
+      </div>
+      <div class="step">
+        <code>S4D430</code>
+        <b>Building Data Models with the ABAP Dictionary and ABAP CDS</b>
+        <span>CDS view, association, annotation</span>
+        <span class="badge badge-ko-hub">한국어 · LHub</span>
+      </div>
+      <div class="step">
+        <code>S4D426</code>
+        <b>Practicing Clean Core Extensibility</b>
+        <span>Clean core, released API, 커스텀 코드 전환 판정</span>
+        <span class="badge badge-ko">한국어</span>
+      </div>
+      <div class="step">
+        <code>S4D437</code>
+        <b>Building Transactional Apps with RAP</b>
+        <span>RAP → OData 서비스 → Fiori Elements</span>
+        <span class="badge badge-en">영어</span>
+      </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="num">#</th><th>코드</th><th>과정</th><th class="num">시간(분)</th><th>언어</th></tr></thead>
+          <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td><code>S4D400</code></td>
+          <td><a href="https://learning.sap.com/courses/basic-abap-programming" target="_blank" rel="noopener">Learning Basic ABAP Programming</a><br><span style="font-size:13px;color:var(--ink-3)">ABAP 기본 문법, 로컬 클래스, 디버깅</span></td>
+          <td class="num">1,049</td>
+          <td><span class="badge badge-ko">한국어</span></td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td><code>S4D401</code></td>
+          <td><a href="https://learning.sap.com/courses/intermediate-abap-programming" target="_blank" rel="noopener">Deepening Your ABAP Programming Knowledge</a><br><span style="font-size:13px;color:var(--ink-3)">Code Pushdown(ABAP SQL), 성능 측정, ABAP Unit, ATC</span></td>
+          <td class="num">1,397</td>
+          <td><span class="badge badge-ko">한국어</span></td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td><code>S4D430</code></td>
+          <td><a href="https://learning.sap.com/courses/data-modelling-in-abap-dictionary-and-abap-core-data-services" target="_blank" rel="noopener">Building Data Models with the ABAP Dictionary and ABAP CDS</a><br><span style="font-size:13px;color:var(--ink-3)">CDS view, association, annotation</span></td>
+          <td class="num">1,257</td>
+          <td><span class="badge badge-ko-hub">한국어 · LHub</span></td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td><code>S4D426</code></td>
+          <td><a href="https://learning.sap.com/courses/practicing-clean-core-extensibility-for-sap-s-4hana-cloud" target="_blank" rel="noopener">Practicing Clean Core Extensibility</a><br><span style="font-size:13px;color:var(--ink-3)">Clean core, released API, 커스텀 코드 전환 판정</span></td>
+          <td class="num">478</td>
+          <td><span class="badge badge-ko">한국어</span></td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td><code>S4D437</code></td>
+          <td><a href="https://learning.sap.com/courses/building-transactional-apps-with-the-abap-restful-application-programming-model" target="_blank" rel="noopener">Building Transactional Apps with RAP</a><br><span style="font-size:13px;color:var(--ink-3)">RAP → OData 서비스 → Fiori Elements</span></td>
+          <td class="num">1,222</td>
+          <td><span class="badge badge-en">영어</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note note-quiet">
+        1~4번은 한국어판이 있고 <code>S4D437</code>은 영어만 있습니다.
+        <code>S4D437</code>에는 exercise 가이드와 전용 실습 시스템이 있으므로 <strong>실습 위주로 진행</strong>할 수 있습니다.
+        한국어가 없다는 것이 제외 사유는 아닙니다.
+      </div>
+
+      <h2 id="scope">SAP 공식 과정이 다루는 범위</h2>
+      <p>공식 과정의 범위와 별도 기술 학습이 필요한 구간을 구분했습니다.</p>
+      <figure class="scope-flow" aria-labelledby="scope-flow-title">
+        <figcaption id="scope-flow-title">CDS에서 OData와 화면 연계로 이어지는 학습 범위</figcaption>
+        <div class="scope-flow-grid">
+          <div class="scope-flow-group scope-covered">
+            <span class="scope-flow-label">SAP 공식 과정에서 다룸</span>
+            <ol>
+              <li><b>CDS 데이터 모델</b><code>S4D430</code></li>
+              <li><b>RAP 비즈니스 오브젝트</b><code>S4D437</code></li>
+              <li><b>OData 서비스 노출</b><code>S4D437</code></li>
+            </ol>
+          </div>
+          <span class="scope-flow-arrow" aria-hidden="true">&rarr;</span>
+          <div class="scope-flow-group scope-connected">
+            <span class="scope-flow-label">화면 연계</span>
+            <div class="scope-flow-target"><b>Fiori Elements</b><span>SAP 공식 과정에서 다룸</span></div>
+            <div class="scope-flow-target"><b>기타 Web 프론트엔드</b><span>선택한 기술에 맞는 별도 학습</span></div>
+          </div>
+        </div>
+      </figure>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>구간</th><th>내용</th><th>SAP 공식 과정</th></tr></thead>
+          <tbody>
+            <tr><td>데이터 모델</td><td>CDS view, association, annotation</td><td><span class="badge badge-ko">있음</span> <code>S4D430</code></td></tr>
+            <tr><td>백엔드 로직</td><td>RAP 비즈니스 오브젝트, behavior</td><td><span class="badge badge-ko">있음</span> <code>S4D437</code></td></tr>
+            <tr><td>서비스 노출</td><td>OData 서비스 정의 · 바인딩 · 게시</td><td><span class="badge badge-ko">있음</span> <code>S4D437</code></td></tr>
+            <tr><td>Fiori 화면</td><td>annotation 기반 Fiori Elements</td><td><span class="badge badge-ko">있음</span> <code>S4D437</code> Unit 1·3</td></tr>
+            <tr><td><strong>기타 Web 화면</strong></td><td><strong>OData를 별도 Web 프론트엔드에서 소비</strong></td><td><span class="badge badge-none">범위 밖</span> 선택한 기술에 맞는 학습 필요</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note note-warn">
+        <span class="note-title">Fiori 외 프론트엔드를 연결하는 경우</span>
+        SAP 공식 과정은 Fiori Elements와 SAPUI5를 중심으로 다룹니다. <strong>RAP로 OData 서비스를 노출하는 데까지</strong>를 먼저 학습하고,
+        이후 화면 구현은 선택한 프론트엔드 기술의 교육자료를 별도로 확인합니다.
+      </div>
+
+      <h2 id="judge">커스텀 코드 판정 도구</h2>
+      <p><code>S4D426</code> Unit 1에 가이드 시뮬레이션 실습으로 들어 있습니다. 실제로 사용하는 커스텀 코드를 식별하고 범위를 정하는 방법을 다룹니다.</p>
+      <ul>
+        <li><strong>ABAP Call Monitor(SCMON)</strong>로 사용량 수집 — 실제 호출되는 리포트만 남깁니다</li>
+        <li><strong>Custom Code Migration 앱</strong>으로 전환 범위 지정</li>
+        <li><strong>ATC check variant</strong> <code>ABAP_CLOUD_DEVELOPMENT_DEFAULT</code> / <code>ABAP_CLOUD_READINESS</code> — Unit 5에 설명만 있고 실행 실습은 없습니다</li>
+      </ul>
+
+      <h2 id="fiori">Fiori Elements 연계</h2>
+      <p><code>S4D437</code> 안에 annotation 기반 Fiori Elements 리스트·오브젝트 페이지 실습이 있어 별도 과정이 필요 없습니다. Fiori 운영·관리가 필요하면 아래를 봅니다.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>코드</th><th>과정</th><th class="num">시간(분)</th><th>언어</th></tr></thead>
+          <tbody>
+            <tr><td><code>UX100</code></td><td><a href="https://learning.sap.com/courses/learning-the-basics-of-sap-fiori" target="_blank" rel="noopener">Learning the Basics of SAP Fiori</a> <span class="badge badge-lab">실습</span></td><td class="num">1,405</td><td><span class="badge badge-ko-hub">한국어 · LHub</span></td></tr>
+            <tr><td><code>UX200</code></td><td><a href="https://learning.sap.com/courses/sap-fiori-system-administration-1" target="_blank" rel="noopener">SAP Fiori System Administration</a></td><td class="num">928</td><td><span class="badge badge-en">영어</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="lab">실습 환경</h2>
+      <p>5개 과정 모두 학습자별 실습 시스템이 있습니다.</p>
+      <div class="note note-warn">
+        실행 환경은 <strong>SAP BTP ABAP environment</strong>입니다. 실제 운영 환경과 런타임이 다를 수 있습니다.
+        문법과 개발 패턴 학습에 활용하고, 운영 환경 고유 동작은 별도로 검증합니다.
+      </div>
+
+      <h2 id="next">다음</h2>
+      <div class="rel-grid">
+        <a class="rel-card" href="access.html"><b>실습 · 한국어</b><span>실습 시스템 등록 조건과 한국어 제공 현황</span></a>
+        <a class="rel-card" href="conversion.html"><b>System Conversion</b><span>기술 전환 절차와 전환 후 점검</span></a>
+        <a class="rel-card" href="index.html#modules"><b>모듈별 찾기</b><span>업무 모듈 과정으로 돌아가기</span></a>
+      </div></div>
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">L</span>
+          <span class="brand-text"><b>ERP 운영 학습 가이드</b><span>SAP 공식 과정 &middot; 실습 &middot; 한국어 안내</span></span>
+        </a>
+        <p>SAP가 공식으로 제공하는 학습자료를 담당 모듈 기준으로 찾을 수 있게 정리한 참조 사이트입니다. 커리큘럼이 아니며, 필요한 것만 골라 쓰면 됩니다.</p>
+      </div>
+      <div class="foot-col">
+        <b>찾기</b>
+        <ul>
+          <li><a href="index.html#modules">모듈별 찾기</a></li>
+          <li><a href="custom-reports.html">ABAP · RAP 학습</a></li>
+          <li><a href="conversion.html">System Conversion</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <b>준비</b>
+        <ul>
+          <li><a href="start.html">시작하기</a></li>
+          <li><a href="access.html">실습 · 한국어 안내</a></li>
+          <li><a href="access.html#korean">한국어 제공 현황</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <b>SAP 공식</b>
+        <ul>
+          <li><a href="https://learning.sap.com" target="_blank" rel="noopener">SAP Learning</a></li>
+          <li><a href="https://help.sap.com" target="_blank" rel="noopener">SAP Help Portal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>모든 과정 정보는 <strong>2026-09-02</strong> 기준으로 SAP 공식 페이지에서 확인한 것입니다. 확인하지 않은 항목은 &lsquo;미확인&rsquo;으로 표시했습니다.</p>
+      <p>비공식 학습 링크 모음이며 SAP SE의 공식 사이트가 아닙니다. SAP 및 관련 제품명은 SAP SE 또는 계열사의 상표입니다.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
