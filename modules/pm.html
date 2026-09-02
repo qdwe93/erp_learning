@@ -6,7 +6,7 @@
 <title>설비보전 (PM) — ERP 운영 학습 가이드</title>
 <meta name="description" content="PM 설비보전 담당자를 위한 SAP 공식 과정 목록, 한국어 제공 여부, 실습 시스템 정보">
 <meta name="color-scheme" content="light">
-<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/site.css?v=20260903">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E306D'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='15' font-weight='bold' fill='white' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
 </head>
 <body>
@@ -27,8 +27,8 @@
           <a href="../index.html#modules" aria-current="page">모듈별 찾기</a>
           <a href="../custom-reports.html">ABAP · RAP 학습</a>
           <a href="../conversion.html">System Conversion</a>
-          <a href="../access.html">실습 · 한국어</a>
-          <a href="../start.html">시작하기</a>
+          <a href="../access.html">채널 · 실습</a>
+          <a href="../catalog.html">전체 카탈로그</a>
       </div>
       <a class="btn btn-primary btn-sm nav-cta" href="../start.html">시작하기</a>
     </nav>
@@ -44,10 +44,10 @@
     <h1>설비보전 <span style="color:var(--ink-3);font-weight:600;font-size:.62em">PM</span></h1>
     <p class="page-sub">SAP 현재 명칭은 <strong>Asset Management (EAM)</strong>입니다.</p>
     <div class="page-tags">
-      <span class="badge badge-time">journey 3,392분 · 56시간 32분</span>
-      
-      <span class="badge badge-ko-hub">한국어 · LHub</span>
-      
+      <span class="badge badge-time">journey 3,405분 · 56시간 45분</span>
+
+      <span class="badge badge-ko-hub">한국어 일부</span>
+      <span class="badge badge-lab">Catalog 실습 6개</span>
     </div>
   </div>
 </div>
@@ -56,72 +56,93 @@
   <div class="doc-grid">
     <nav class="toc" aria-label="이 페이지 목차">
       <b>이 페이지</b>
-      <ul><li><a href="#journey">Learning Journey</a></li><li><a href="#courses">과정 목록</a></li><li><a href="#next">다음</a></li></ul>
+      <ul><li><a href="#journey">Learning Journey</a></li><li><a href="#courses">과정 목록</a></li><li><a href="#practice">실습 시스템</a></li><li><a href="#certification">관련 Certification</a></li><li><a href="#next">다음</a></li></ul>
     </nav>
     <div>
       <div class="note note-warn"><span class="note-title">주의</span>이름이 비슷한 <strong>Asset Accounting(자산회계, FI-AA)</strong>과 전혀 다르다. 설비·기계 유지보수는 여기, 고정자산 감가상각은 FI-AA다.</div>
 
-      
+
       <h2 id="journey">Learning Journey</h2>
       <p>SAP가 이 모듈용으로 묶어 제공하는 공식 경로입니다. 전체를 다 들을 필요는 없습니다.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>ID</th><th>공식 명칭</th><th class="num">시간(분)</th></tr></thead>
+          <thead><tr><th>ID</th><th>공식 명칭</th><th class="num">시간(분)</th><th>레벨</th><th>이용 채널</th><th>교재</th></tr></thead>
           <tbody><tr>
             <td><code>LSC00977</code></td>
-            <td><a href="https://learning.sap.com/learning-journeys/implementing-asset-management-in-sap-s-4hana-cloud-private-edition" target="_blank" rel="noopener">Implementing Asset Management in SAP S/4HANA Cloud Private Edition</a></td>
-            <td class="num">3,392</td>
+            <td><a href="https://learning.sap.com/learning-journeys/implementing-asset-management-in-sap-s-4hana-cloud-private-edition" target="_blank" rel="noopener">Implementing Asset Management in SAP S/4HANA Cloud Private Edition</a><br><span style="font-size:12.5px;color:var(--ink-3)">In this Learning Journey consultants will deep dive into the essential and advanced processes of SAP S/4HANA Asset Management.</span></td>
+            <td class="num">3,405</td>
+            <td>INTERMEDIATE</td>
+            <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+            <td><span class="badge badge-download">교재 다운로드 가능</span></td>
           </tr></tbody>
         </table>
       </div>
       <div class="note note-quiet">
-        이 journey에는 <code>S4C03</code> Implementing SAP S/4HANA Cloud Private Edition (730분)과
-        <code>SL_RISE419</code> Introducing RISE with SAP Methodology (145분)가 공통으로 포함돼 있습니다.
-        여러 모듈을 볼 사람은 한 번만 들으면 됩니다.
+        이 프로그램은 모듈 과정 전에 <code>S4C03</code> Implementing SAP S/4HANA Cloud Private Edition (735분)과
+        <code>SL_RISE419</code> Introducing RISE with SAP Methodology for SAP Partners and Customers (105분)을 공통 기반으로 사용합니다.
+        여러 모듈을 볼 사람은 공통 과정을 한 번만 이수합니다.
       </div>
 
-      
+
       <h2 id="courses">과정 목록</h2>
       <p>담당 범위에 해당하는 것만 고르십시오. 시간은 SAP 공식 표시값입니다.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>코드</th><th>과정</th><th class="num">시간(분)</th><th>언어</th></tr></thead>
+          <thead><tr><th>코드</th><th>과정 · Catalog 설명</th><th class="num">시간(분)</th><th>레벨</th><th>언어</th><th>이용 채널</th><th>교재</th></tr></thead>
           <tbody>
         <tr>
           <td><code>S43000</code></td>
-          <td><a href="https://learning.sap.com/courses/exploring-business-processes-in-sap-s-4hana-asset-management" target="_blank" rel="noopener">Exploring Business Processes in SAP S/4HANA Asset Management</a></td>
-          <td class="num">560</td>
-          <td><span class="badge badge-ko-hub">한국어 · LHub</span></td>
+          <td><a href="https://learning.sap.com/courses/exploring-business-processes-in-sap-s-4hana-asset-management" target="_blank" rel="noopener">Exploring Business Processes in SAP S/4HANA Asset Management</a> <span class="badge badge-lab">실습</span><br><span style="font-size:12.5px;color:var(--ink-3)">This learning asset will guide you through the core business processes of SAP S/4HANA Asset Management.</span></td>
+          <td class="num">570</td>
+          <td>INTERMEDIATE</td>
+          <td><span class="badge badge-ko">한국어</span></td>
+          <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+          <td><span class="badge badge-download">교재 다운로드 가능</span></td>
         </tr>
         <tr>
           <td><code>S43100</code></td>
-          <td>Managing Technical Objects in SAP S/4HANA Asset Management</td>
-          <td class="num">577</td>
+          <td><a href="https://learning.sap.com/courses/managing-technical-objects-in-sap-s-4hana-asset-management" target="_blank" rel="noopener">Managing Technical Objects in SAP S/4HANA Asset Management</a> <span class="badge badge-lab">실습</span><br><span style="font-size:12.5px;color:var(--ink-3)">This course provides comprehensive knowledge on implementation and customizing of technical objects. It is designed to provide consultants with practical skills and solid detail knowledge t…</span></td>
+          <td class="num">585</td>
+          <td>INTERMEDIATE</td>
           <td><span class="badge badge-unknown">미확인</span></td>
+          <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+          <td><span class="badge badge-download">교재 다운로드 가능</span></td>
         </tr>
         <tr>
           <td><code>S43200</code></td>
-          <td>Exploring Preventive Maintenance in SAP S/4HANA Asset Management</td>
-          <td class="num">455</td>
+          <td><a href="https://learning.sap.com/courses/exploring-preventive-maintenance-in-sap-s-4hana-asset-management" target="_blank" rel="noopener">Exploring Preventive Maintenance in SAP S/4HANA Asset Management</a> <span class="badge badge-lab">실습</span><br><span style="font-size:12.5px;color:var(--ink-3)">This Learning asset provides comprehensive knowledge on implementation and customizing of preventive maintenance. It is designed to provide consultants with practical skills and solid detai…</span></td>
+          <td class="num">465</td>
+          <td>INTERMEDIATE</td>
           <td><span class="badge badge-unknown">미확인</span></td>
+          <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+          <td><span class="badge badge-download">교재 다운로드 가능</span></td>
         </tr>
         <tr>
           <td><code>S43300</code></td>
-          <td>Customizing in SAP S/4HANA Asset Management</td>
-          <td class="num">670</td>
+          <td><a href="https://learning.sap.com/courses/customizing-in-sap-s-4hana-asset-management" target="_blank" rel="noopener">Customizing in SAP S/4HANA Asset Management</a> <span class="badge badge-lab">실습</span><br><span style="font-size:12.5px;color:var(--ink-3)">This course provides comprehensive knowledge on implementation and customizing in SAP S/4HANA Asset Management. It is designed to provide consultants with practical skills and solid detail…</span></td>
+          <td class="num">675</td>
+          <td>INTERMEDIATE</td>
           <td><span class="badge badge-unknown">미확인</span></td>
+          <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+          <td><span class="badge badge-download">교재 다운로드 가능</span></td>
         </tr>
         <tr>
           <td><code>S43400</code></td>
-          <td>Exploring Advanced Functions in Maintenance Processing</td>
-          <td class="num">185</td>
+          <td><a href="https://learning.sap.com/courses/exploring-advanced-functions-in-maintenance-processing" target="_blank" rel="noopener">Exploring Advanced Functions in Maintenance Processing</a> <span class="badge badge-lab">실습</span><br><span style="font-size:12.5px;color:var(--ink-3)">In this course consultants will deep dive into advanced processes of SAP S/4HANA Asset Management.</span></td>
+          <td class="num">195</td>
+          <td>INTERMEDIATE</td>
           <td><span class="badge badge-unknown">미확인</span></td>
+          <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+          <td><span class="badge badge-download">교재 다운로드 가능</span></td>
         </tr>
         <tr>
           <td><code>S43410</code></td>
-          <td>Exploring Refurbishment of Spare Parts</td>
+          <td><a href="https://learning.sap.com/courses/exploring-refurbishment-of-spare-parts" target="_blank" rel="noopener">Exploring Refurbishment of Spare Parts</a> <span class="badge badge-lab">실습</span><br><span style="font-size:12.5px;color:var(--ink-3)">In this course consultants will deep dive into advanced processes of SAP S/4HANA Asset Management.</span></td>
           <td class="num">120</td>
+          <td>INTERMEDIATE</td>
           <td><span class="badge badge-unknown">미확인</span></td>
+          <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+          <td><span class="badge badge-download">교재 다운로드 가능</span></td>
         </tr>
           </tbody>
         </table>
@@ -130,11 +151,71 @@
         &lsquo;미확인&rsquo;은 한국어가 없다는 뜻이 아니라 이번에 확인하지 않았다는 뜻입니다. 링크가 없는 과정은 공식 주소를 확인하지 못한 것입니다.
       </p>
 
-      
-      <h2 id="practice">실습 시스템</h2>
-      <div class="note note-quiet">이 모듈에는 확인된 전용 실습 시스템이 없습니다.</div>
 
-      
+      <h2 id="practice">실습 시스템</h2>
+      <p>새 SAP Learning Catalog에서 이 모듈 과정 코드와 연결된 실습 시스템입니다.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>ID</th><th>시스템</th><th>실행 환경</th><th>실습 가이드</th></tr></thead>
+          <tbody><tr>
+            <td><code>S43000</code></td>
+            <td><a href="https://learning.sap.com/practice-systems/business-processes-in-sap-s-4hana-asset-management" target="_blank" rel="noopener">Business Processes in SAP S/4HANA Asset Management</a></td>
+            <td>Catalog에는 미표시</td>
+            <td><span class="badge badge-unknown">미확인</span></td>
+          </tr>
+          <tr>
+            <td><code>S43100</code></td>
+            <td><a href="https://learning.sap.com/practice-systems/managing-technical-objects-in-sap-s-4hana" target="_blank" rel="noopener">Managing Technical Objects in SAP S/4HANA</a></td>
+            <td>Catalog에는 미표시</td>
+            <td><span class="badge badge-unknown">미확인</span></td>
+          </tr>
+          <tr>
+            <td><code>S43200</code></td>
+            <td><a href="https://learning.sap.com/practice-systems/preventive-maintenance-in-sap-s-4hana" target="_blank" rel="noopener">Preventive Maintenance in SAP S/4HANA</a></td>
+            <td>Catalog에는 미표시</td>
+            <td><span class="badge badge-unknown">미확인</span></td>
+          </tr>
+          <tr>
+            <td><code>S43300</code></td>
+            <td><a href="https://learning.sap.com/practice-systems/customizing-in-sap-s-4hana-asset-management" target="_blank" rel="noopener">Customizing in SAP S/4HANA Asset Management</a></td>
+            <td>Catalog에는 미표시</td>
+            <td><span class="badge badge-unknown">미확인</span></td>
+          </tr>
+          <tr>
+            <td><code>S43400</code></td>
+            <td><a href="https://learning.sap.com/practice-systems/exploring-advanced-functions-in-maintenance-processing" target="_blank" rel="noopener">Exploring Advanced Functions in Maintenance Processing</a></td>
+            <td>Catalog에는 미표시</td>
+            <td><span class="badge badge-unknown">미확인</span></td>
+          </tr>
+          <tr>
+            <td><code>S43410</code></td>
+            <td><a href="https://learning.sap.com/practice-systems/refurbishment-of-spare-parts" target="_blank" rel="noopener">Refurbishment of Spare Parts</a></td>
+            <td>Catalog에는 미표시</td>
+            <td><span class="badge badge-unknown">미확인</span></td>
+          </tr></tbody>
+        </table>
+      </div>
+      <div class="note note-warn">
+        Catalog에 보인다는 사실은 <strong>실습 시스템이 등록돼 있다는 뜻</strong>입니다. 현재 SAP Learning Hub 계정에서 Enroll이 실제로 되는지,
+        실행 환경과 릴리스가 무엇인지는 각 링크에서 다시 확인해야 합니다. 실습은 운영 환경 검증을 대신하지 않습니다.
+      </div>
+      <p>등록 조건은 <a href="../access.html">계정 · 실습</a>에서 확인하십시오.</p>
+
+
+
+
+      <h2 id="certification">관련 Certification</h2>
+      <p>Catalog에서 이 모듈과 직접 연결된 공식 Certification입니다. 과정 이수와 Certification 취득은 별개이며, 운영 권한이나 사내 자격을 자동으로 부여하지 않습니다.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>ID · Exam</th><th>공식 Certification</th><th>대상 역할</th></tr></thead>
+          <tbody><tr>
+            <td><code>C_S43</code><br><code>C_S43_2601</code></td>
+            <td><a href="https://learning.sap.com/certifications/sap-certified-associate-sap-s-4hana-asset-management" target="_blank" rel="noopener">SAP Certified - Implementation Consultant for SAP S/4HANA Cloud Private Edition, Asset Management</a></td>
+            <td>consultant</td>
+          </tr></tbody>
+        </table>
+      </div>
 
       <h2 id="next">다음</h2>
       <div class="rel-grid">
@@ -164,6 +245,7 @@
           <li><a href="../index.html#modules">모듈별 찾기</a></li>
           <li><a href="../custom-reports.html">ABAP · RAP 학습</a></li>
           <li><a href="../conversion.html">System Conversion</a></li>
+          <li><a href="../catalog.html">전체 카탈로그</a></li>
         </ul>
       </div>
       <div class="foot-col">
@@ -183,12 +265,12 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <p>모든 과정 정보는 <strong>2026-09-02</strong> 기준으로 SAP 공식 페이지에서 확인한 것입니다. 확인하지 않은 항목은 &lsquo;미확인&rsquo;으로 표시했습니다.</p>
+      <p>과정 정보는 <strong>2026-09-03</strong> 기준 SAP 공식 페이지와 SAP Learning Hub에서 다운로드한 Catalog XML에서 확인했습니다. 확인하지 않은 항목은 &lsquo;미확인&rsquo;으로 표시했습니다.</p>
       <p>비공식 학습 링크 모음이며 SAP SE의 공식 사이트가 아닙니다. SAP 및 관련 제품명은 SAP SE 또는 계열사의 상표입니다.</p>
     </div>
   </div>
 </footer>
 
-<script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/site.js?v=20260903" defer></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 <title>관리회계 (CO) — ERP 운영 학습 가이드</title>
 <meta name="description" content="CO 관리회계 담당자를 위한 SAP 공식 과정 목록, 한국어 제공 여부, 실습 시스템 정보">
 <meta name="color-scheme" content="light">
-<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/site.css?v=20260903">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E306D'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='15' font-weight='bold' fill='white' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
 </head>
 <body>
@@ -27,8 +27,8 @@
           <a href="../index.html#modules" aria-current="page">모듈별 찾기</a>
           <a href="../custom-reports.html">ABAP · RAP 학습</a>
           <a href="../conversion.html">System Conversion</a>
-          <a href="../access.html">실습 · 한국어</a>
-          <a href="../start.html">시작하기</a>
+          <a href="../access.html">채널 · 실습</a>
+          <a href="../catalog.html">전체 카탈로그</a>
       </div>
       <a class="btn btn-primary btn-sm nav-cta" href="../start.html">시작하기</a>
     </nav>
@@ -44,10 +44,10 @@
     <h1>관리회계 <span style="color:var(--ink-3);font-weight:600;font-size:.62em">CO</span></h1>
     <p class="page-sub">SAP 현재 명칭은 <strong>Management Accounting</strong>입니다.</p>
     <div class="page-tags">
-      <span class="badge badge-time">journey 6,382분 · 106시간 22분</span>
-      
-      <span class="badge badge-ko-hub">한국어 일부</span>
-      
+      <span class="badge badge-time">journey 6,390분 · 106시간 30분</span>
+
+      <span class="badge badge-ko">한국어</span>
+      <span class="badge badge-lab">Catalog 실습 5개</span>
     </div>
   </div>
 </div>
@@ -56,66 +56,84 @@
   <div class="doc-grid">
     <nav class="toc" aria-label="이 페이지 목차">
       <b>이 페이지</b>
-      <ul><li><a href="#journey">Learning Journey</a></li><li><a href="#courses">과정 목록</a></li><li><a href="#notes">알아둘 것</a></li><li><a href="#next">다음</a></li></ul>
+      <ul><li><a href="#journey">Learning Journey</a></li><li><a href="#courses">과정 목록</a></li><li><a href="#practice">실습 시스템</a></li><li><a href="#certification">관련 Certification</a></li><li><a href="#notes">알아둘 것</a></li><li><a href="#next">다음</a></li></ul>
     </nav>
     <div>
-      
 
-      
+
+
       <h2 id="journey">Learning Journey</h2>
       <p>SAP가 이 모듈용으로 묶어 제공하는 공식 경로입니다. 전체를 다 들을 필요는 없습니다.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>ID</th><th>공식 명칭</th><th class="num">시간(분)</th></tr></thead>
+          <thead><tr><th>ID</th><th>공식 명칭</th><th class="num">시간(분)</th><th>레벨</th><th>이용 채널</th><th>교재</th></tr></thead>
           <tbody><tr>
             <td><code>LSC00996</code></td>
-            <td><a href="https://learning.sap.com/learning-journeys/implementing-management-accounting-in-sap-s-4hana" target="_blank" rel="noopener">Implementing Management Accounting in SAP S/4HANA</a></td>
-            <td class="num">6,382</td>
+            <td><a href="https://learning.sap.com/learning-journeys/implementing-management-accounting-in-sap-s-4hana" target="_blank" rel="noopener">Implementing Management Accounting in SAP S/4HANA</a><br><span style="font-size:12.5px;color:var(--ink-3)">Learn how to implement in SAP S/4HANA Cloud Private Edition and get certified.</span></td>
+            <td class="num">6,390</td>
+            <td>INTERMEDIATE</td>
+            <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+            <td><span class="badge badge-download">교재 다운로드 가능</span></td>
           </tr></tbody>
         </table>
       </div>
       <div class="note note-quiet">
-        이 journey에는 <code>S4C03</code> Implementing SAP S/4HANA Cloud Private Edition (730분)과
-        <code>SL_RISE419</code> Introducing RISE with SAP Methodology (145분)가 공통으로 포함돼 있습니다.
-        여러 모듈을 볼 사람은 한 번만 들으면 됩니다.
+        이 프로그램은 모듈 과정 전에 <code>S4C03</code> Implementing SAP S/4HANA Cloud Private Edition (735분)과
+        <code>SL_RISE419</code> Introducing RISE with SAP Methodology for SAP Partners and Customers (105분)을 공통 기반으로 사용합니다.
+        여러 모듈을 볼 사람은 공통 과정을 한 번만 이수합니다.
       </div>
 
-      
+
       <h2 id="courses">과정 목록</h2>
       <p>담당 범위에 해당하는 것만 고르십시오. 시간은 SAP 공식 표시값입니다.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>코드</th><th>과정</th><th class="num">시간(분)</th><th>언어</th></tr></thead>
+          <thead><tr><th>코드</th><th>과정 · Catalog 설명</th><th class="num">시간(분)</th><th>레벨</th><th>언어</th><th>이용 채널</th><th>교재</th></tr></thead>
           <tbody>
         <tr>
           <td><code>S4F22</code></td>
-          <td><a href="https://learning.sap.com/courses/cost-center-and-internal-order-accounting-in-sap-s-4hana" target="_blank" rel="noopener">Cost Center and Internal Order Accounting in SAP S/4HANA</a></td>
-          <td class="num">963</td>
+          <td><a href="https://learning.sap.com/courses/cost-center-and-internal-order-accounting-in-sap-s-4hana" target="_blank" rel="noopener">Cost Center and Internal Order Accounting in SAP S/4HANA</a> <span class="badge badge-lab">실습</span><br><span style="font-size:12.5px;color:var(--ink-3)">This course covers configuring and using Cost Center and Internal Order Accounting with SAP S/4HANA Cloud Public Edition. Gain foundational knowledge in overhead cost controlling, cost allo…</span></td>
+          <td class="num">975</td>
+          <td>INTERMEDIATE</td>
           <td><span class="badge badge-ko">한국어</span></td>
+          <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+          <td><span class="badge badge-download">교재 다운로드 가능</span></td>
         </tr>
         <tr>
           <td><code>S4F23</code></td>
-          <td>Product Cost Planning in SAP S/4HANA</td>
-          <td class="num">1,086</td>
-          <td><span class="badge badge-unknown">미확인</span></td>
+          <td><a href="https://learning.sap.com/courses/product-cost-planning-in-sap-s-4hana" target="_blank" rel="noopener">Product Cost Planning in SAP S/4HANA</a> <span class="badge badge-lab">실습</span><br><span style="font-size:12.5px;color:var(--ink-3)">This course provides an overview of product cost planning with SAP S/4HANA Cloud Private Edition, covering material cost estimate, cost planning configuration, advanced cost estimate method…</span></td>
+          <td class="num">1,095</td>
+          <td>INTERMEDIATE</td>
+          <td><span class="badge badge-ko">한국어</span></td>
+          <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+          <td><span class="badge badge-download">교재 다운로드 가능</span></td>
         </tr>
         <tr>
           <td><code>S4F25</code></td>
-          <td>Cost Object Controlling in SAP S/4HANA</td>
-          <td class="num">2,127</td>
-          <td><span class="badge badge-unknown">미확인</span></td>
+          <td><a href="https://learning.sap.com/courses/cost-object-controlling-in-sap-s-4hana" target="_blank" rel="noopener">Cost Object Controlling in SAP S/4HANA</a> <span class="badge badge-lab">실습</span><br><span style="font-size:12.5px;color:var(--ink-3)">Participants of this course will gain an overview of the fundamental production scenarios and its integration to Cost Object Controlling with SAP S/4HANA. The business processes will be ana…</span></td>
+          <td class="num">2,130</td>
+          <td>INTERMEDIATE</td>
+          <td><span class="badge badge-ko">한국어</span></td>
+          <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+          <td><span class="badge badge-download">교재 다운로드 가능</span></td>
         </tr>
         <tr>
           <td><code>S4F28</code></td>
-          <td>Profit Center Accounting in SAP S/4HANA</td>
-          <td class="num">304</td>
-          <td><span class="badge badge-unknown">미확인</span></td>
+          <td><a href="https://learning.sap.com/courses/profit-center-accounting-in-sap-s-4hana" target="_blank" rel="noopener">Profit Center Accounting in SAP S/4HANA</a> <span class="badge badge-lab">실습</span><br><span style="font-size:12.5px;color:var(--ink-3)">Join our course to master the fundamental business processes and tasks of Profit Center Accounting. Gain insights into vital business processes, manage global settings and master data, and…</span></td>
+          <td class="num">315</td>
+          <td>INTERMEDIATE</td>
+          <td><span class="badge badge-ko">한국어</span></td>
+          <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+          <td><span class="badge badge-download">교재 다운로드 가능</span></td>
         </tr>
         <tr>
           <td><code>S4F29</code></td>
-          <td>Profitability Analysis in SAP S/4HANA</td>
-          <td class="num">1,077</td>
-          <td><span class="badge badge-unknown">미확인</span></td>
+          <td><a href="https://learning.sap.com/courses/profitability-analysis-in-sap-s-4hana" target="_blank" rel="noopener">Profitability Analysis in SAP S/4HANA</a> <span class="badge badge-lab">실습</span><br><span style="font-size:12.5px;color:var(--ink-3)">The course teaches configuring and using Profitability Analysis in SAP S/4HANA Cloud Private Edition, covering Margin Analysis and CO-PA Costing-based processes. It addresses organizational…</span></td>
+          <td class="num">1,080</td>
+          <td>INTERMEDIATE</td>
+          <td><span class="badge badge-ko">한국어</span></td>
+          <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+          <td><span class="badge badge-download">교재 다운로드 가능</span></td>
         </tr>
           </tbody>
         </table>
@@ -124,13 +142,67 @@
         &lsquo;미확인&rsquo;은 한국어가 없다는 뜻이 아니라 이번에 확인하지 않았다는 뜻입니다. 링크가 없는 과정은 공식 주소를 확인하지 못한 것입니다.
       </p>
 
-      
-      <h2 id="practice">실습 시스템</h2>
-      <div class="note note-quiet">이 모듈에는 확인된 전용 실습 시스템이 없습니다.</div>
 
-      
+      <h2 id="practice">실습 시스템</h2>
+      <p>새 SAP Learning Catalog에서 이 모듈 과정 코드와 연결된 실습 시스템입니다.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>ID</th><th>시스템</th><th>실행 환경</th><th>실습 가이드</th></tr></thead>
+          <tbody><tr>
+            <td><code>S4F22</code></td>
+            <td><a href="https://learning.sap.com/practice-systems/cost-center-and-internal-order-accounting-in-sap-s-4hana" target="_blank" rel="noopener">Cost Center and Internal Order Accounting in SAP S/4HANA</a></td>
+            <td>Catalog에는 미표시</td>
+            <td><span class="badge badge-unknown">미확인</span></td>
+          </tr>
+          <tr>
+            <td><code>S4F23</code></td>
+            <td><a href="https://learning.sap.com/practice-systems/product-cost-planning-in-sap-s-4hana" target="_blank" rel="noopener">Product Cost Planning in SAP S/4HANA</a></td>
+            <td>Catalog에는 미표시</td>
+            <td><span class="badge badge-unknown">미확인</span></td>
+          </tr>
+          <tr>
+            <td><code>S4F25</code></td>
+            <td><a href="https://learning.sap.com/practice-systems/cost-object-controlling-in-sap-s-4hana" target="_blank" rel="noopener">Cost Object Controlling in SAP S/4HANA</a></td>
+            <td>Catalog에는 미표시</td>
+            <td><span class="badge badge-unknown">미확인</span></td>
+          </tr>
+          <tr>
+            <td><code>S4F28</code></td>
+            <td><a href="https://learning.sap.com/practice-systems/profit-center-accounting-in-sap-s-4hana" target="_blank" rel="noopener">Profit Center Accounting in SAP S/4HANA</a></td>
+            <td>Catalog에는 미표시</td>
+            <td><span class="badge badge-unknown">미확인</span></td>
+          </tr>
+          <tr>
+            <td><code>S4F29</code></td>
+            <td><a href="https://learning.sap.com/practice-systems/profitability-analysis-in-sap-s-4hana" target="_blank" rel="noopener">Profitability Analysis in SAP S/4HANA</a></td>
+            <td>Catalog에는 미표시</td>
+            <td><span class="badge badge-unknown">미확인</span></td>
+          </tr></tbody>
+        </table>
+      </div>
+      <div class="note note-warn">
+        Catalog에 보인다는 사실은 <strong>실습 시스템이 등록돼 있다는 뜻</strong>입니다. 현재 SAP Learning Hub 계정에서 Enroll이 실제로 되는지,
+        실행 환경과 릴리스가 무엇인지는 각 링크에서 다시 확인해야 합니다. 실습은 운영 환경 검증을 대신하지 않습니다.
+      </div>
+      <p>등록 조건은 <a href="../access.html">계정 · 실습</a>에서 확인하십시오.</p>
+
+
       <h2 id="notes">알아둘 것</h2>
       <ul><li>journey 전체가 6,382분으로 가장 길다. 담당 영역(원가·수익성·손익센터)만 골라 듣는 것을 전제로 한다.</li></ul>
+
+
+      <h2 id="certification">관련 Certification</h2>
+      <p>Catalog에서 이 모듈과 직접 연결된 공식 Certification입니다. 과정 이수와 Certification 취득은 별개이며, 운영 권한이나 사내 자격을 자동으로 부여하지 않습니다.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>ID · Exam</th><th>공식 Certification</th><th>대상 역할</th></tr></thead>
+          <tbody><tr>
+            <td><code>C_TS4CO</code><br><code>C_TS4CO_2601</code></td>
+            <td><a href="https://learning.sap.com/certifications/sap-certified-associate-sap-s-4hana-for-management-accounting-associates" target="_blank" rel="noopener">SAP Certified - SAP S/4HANA Cloud Private Edition, Management Accounting</a></td>
+            <td>consultant</td>
+          </tr></tbody>
+        </table>
+      </div>
 
       <h2 id="next">다음</h2>
       <div class="rel-grid">
@@ -160,6 +232,7 @@
           <li><a href="../index.html#modules">모듈별 찾기</a></li>
           <li><a href="../custom-reports.html">ABAP · RAP 학습</a></li>
           <li><a href="../conversion.html">System Conversion</a></li>
+          <li><a href="../catalog.html">전체 카탈로그</a></li>
         </ul>
       </div>
       <div class="foot-col">
@@ -179,12 +252,12 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <p>모든 과정 정보는 <strong>2026-09-02</strong> 기준으로 SAP 공식 페이지에서 확인한 것입니다. 확인하지 않은 항목은 &lsquo;미확인&rsquo;으로 표시했습니다.</p>
+      <p>과정 정보는 <strong>2026-09-03</strong> 기준 SAP 공식 페이지와 SAP Learning Hub에서 다운로드한 Catalog XML에서 확인했습니다. 확인하지 않은 항목은 &lsquo;미확인&rsquo;으로 표시했습니다.</p>
       <p>비공식 학습 링크 모음이며 SAP SE의 공식 사이트가 아닙니다. SAP 및 관련 제품명은 SAP SE 또는 계열사의 상표입니다.</p>
     </div>
   </div>
 </footer>
 
-<script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/site.js?v=20260903" defer></script>
 </body>
 </html>

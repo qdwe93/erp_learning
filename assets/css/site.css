@@ -271,6 +271,9 @@ code { font-family: var(--font-mono); font-size: .92em; }
 .badge-tier    { background: rgba(244,119,37,.11); color: var(--brand-navy); }
 .badge-none    { background: var(--line-soft); color: var(--ink-2); }
 .badge-lab     { background: rgba(104,18,122,.09); color: #68127A; }
+.badge-learning { background: rgba(0,114,198,.11); color: #005A9E; }
+.badge-hub      { background: rgba(104,18,122,.09); color: #68127A; }
+.badge-download { background: rgba(0,154,147,.12); color: #00726D; }
 
 /* ---------------------------------------------------------------- 9. 강조 배너 */
 .banner {
@@ -381,6 +384,35 @@ td code { color: var(--ink-2); font-weight: 600; }
 .doc-grid { display: grid; grid-template-columns: 232px 1fr; gap: 44px; align-items: start; }
 .doc-grid > * { min-width: 0; }
 
+/* 전체 Catalog */
+.catalog-shell { padding: 42px 0 var(--sec-y); }
+.catalog-summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
+.catalog-kpi { padding: 18px 20px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+.catalog-kpi b { display: block; color: var(--ink); font-size: 23px; letter-spacing: -.02em; }
+.catalog-kpi span { display: block; margin-top: 3px; color: var(--ink-3); font-size: 12.5px; }
+.catalog-controls {
+  display: grid; grid-template-columns: minmax(240px, 2fr) repeat(4, minmax(140px, 1fr));
+  gap: 12px; padding: 18px; margin: 22px 0 14px; border: 1px solid var(--line);
+  border-radius: var(--radius); background: var(--bg-tint);
+}
+.catalog-control { display: grid; gap: 6px; min-width: 0; }
+.catalog-control label { color: var(--ink-3); font-size: 11.5px; font-weight: 700; letter-spacing: .03em; }
+.catalog-control input, .catalog-control select {
+  width: 100%; height: 42px; padding: 0 12px; border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: #fff; color: var(--ink); font: inherit;
+}
+.catalog-control input:focus, .catalog-control select:focus { outline: 2px solid rgba(0,114,198,.2); border-color: var(--brand-blue); }
+.catalog-status { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 12px 0; color: var(--ink-2); font-size: 13.5px; }
+.catalog-table { min-width: 1220px; }
+.catalog-table td { vertical-align: middle; }
+.catalog-table .catalog-title { min-width: 320px; line-height: 1.45; }
+.catalog-table .catalog-title a { font-weight: 650; }
+.catalog-table .catalog-meta { display: block; margin-top: 4px; color: var(--ink-3); font-size: 11.5px; }
+.catalog-empty { display: none; padding: 34px; text-align: center; color: var(--ink-3); border: 1px dashed var(--line); border-radius: var(--radius); }
+.catalog-pagination { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 20px; }
+.catalog-pagination button { min-width: 84px; }
+.catalog-page-label { min-width: 110px; text-align: center; color: var(--ink-2); font-size: 13px; }
+
 /* 관련 링크 */
 .rel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
 .rel-card {
@@ -413,6 +445,9 @@ td code { color: var(--ink-2); font-weight: 600; }
   .steps { grid-template-columns: repeat(3, 1fr); }
   .doc-grid { grid-template-columns: minmax(0, 1fr); }
   .toc { position: static; }
+  .catalog-summary { grid-template-columns: repeat(2, 1fr); }
+  .catalog-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .catalog-control:first-child { grid-column: 1 / -1; }
 }
 @media (max-width: 900px) {
   :root { --sec-y: 60px; }
@@ -442,6 +477,9 @@ td code { color: var(--ink-2); font-weight: 600; }
   .strip-item { border-right: 0; border-bottom: 1px solid var(--line-soft); }
   .foot-grid { grid-template-columns: 1fr 1fr; }
   .banner { padding: 30px 24px; }
+  .catalog-summary, .catalog-controls { grid-template-columns: 1fr; }
+  .catalog-control:first-child { grid-column: auto; }
+  .catalog-status { align-items: flex-start; flex-direction: column; }
 }
 
 /* ---------------------------------------------------------------- 16. 인쇄 */

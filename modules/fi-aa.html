@@ -6,7 +6,7 @@
 <title>자산회계 (FI-AA) — ERP 운영 학습 가이드</title>
 <meta name="description" content="FI-AA 자산회계 담당자를 위한 SAP 공식 과정 목록, 한국어 제공 여부, 실습 시스템 정보">
 <meta name="color-scheme" content="light">
-<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/site.css?v=20260903">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E306D'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='15' font-weight='bold' fill='white' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
 </head>
 <body>
@@ -27,8 +27,8 @@
           <a href="../index.html#modules" aria-current="page">모듈별 찾기</a>
           <a href="../custom-reports.html">ABAP · RAP 학습</a>
           <a href="../conversion.html">System Conversion</a>
-          <a href="../access.html">실습 · 한국어</a>
-          <a href="../start.html">시작하기</a>
+          <a href="../access.html">채널 · 실습</a>
+          <a href="../catalog.html">전체 카탈로그</a>
       </div>
       <a class="btn btn-primary btn-sm nav-cta" href="../start.html">시작하기</a>
     </nav>
@@ -44,10 +44,10 @@
     <h1>자산회계 <span style="color:var(--ink-3);font-weight:600;font-size:.62em">FI-AA</span></h1>
     <p class="page-sub">SAP 현재 명칭은 <strong>Asset Accounting</strong>입니다. FI 하위 영역입니다.</p>
     <div class="page-tags">
-      
+
       <span class="badge badge-tier">과정 단위 제공</span>
       <span class="badge badge-en">영어</span>
-      <span class="badge badge-lab">실습 시스템 있음</span>
+      <span class="badge badge-lab">Catalog 실습 1개</span>
     </div>
   </div>
 </div>
@@ -56,25 +56,28 @@
   <div class="doc-grid">
     <nav class="toc" aria-label="이 페이지 목차">
       <b>이 페이지</b>
-      <ul><li><a href="#courses">과정 목록</a></li><li><a href="#practice">실습 시스템</a></li><li><a href="#notes">알아둘 것</a></li><li><a href="#next">다음</a></li></ul>
+      <ul><li><a href="#courses">과정 목록</a></li><li><a href="#practice">실습 시스템</a></li><li><a href="#certification">관련 Certification</a></li><li><a href="#notes">알아둘 것</a></li><li><a href="#next">다음</a></li></ul>
     </nav>
     <div>
       <div class="note note-warn"><span class="note-title">주의</span><strong>별도 모듈이 아니라 FI 하위다.</strong> 전용 journey가 없고, FI journey <code>LSC00997</code> 안에 과정으로 들어 있다. FI 담당자가 겸하는 경우 FI journey를 열면 이미 포함돼 있다.</div>
 
-      
 
-      
+
+
       <h2 id="courses">과정 목록</h2>
       <p>담당 범위에 해당하는 것만 고르십시오. 시간은 SAP 공식 표시값입니다.</p>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>코드</th><th>과정</th><th class="num">시간(분)</th><th>언어</th></tr></thead>
+          <thead><tr><th>코드</th><th>과정 · Catalog 설명</th><th class="num">시간(분)</th><th>레벨</th><th>언어</th><th>이용 채널</th><th>교재</th></tr></thead>
           <tbody>
         <tr>
           <td><code>S4F17</code></td>
-          <td><a href="https://learning.sap.com/courses/configuring-asset-accounting-in-sap-s4hana" target="_blank" rel="noopener">Configuring Asset Accounting in SAP S/4HANA</a> <span class="badge badge-lab">실습</span></td>
-          <td class="num">1,323</td>
+          <td><a href="https://learning.sap.com/courses/configuring-asset-accounting-in-sap-s4hana" target="_blank" rel="noopener">Configuring Asset Accounting in SAP S/4HANA</a> <span class="badge badge-lab">실습</span><br><span style="font-size:12.5px;color:var(--ink-3)">This course gives an overview of Asset Accounting configuration and processes (without UPA).</span></td>
+          <td class="num">1,335</td>
+          <td>INTERMEDIATE</td>
           <td><span class="badge badge-en">영어</span></td>
+          <td><span class="badge badge-learning">SAP Learning에서도 이용 가능</span></td>
+          <td><span class="badge badge-download">교재 다운로드 가능</span></td>
         </tr>
           </tbody>
         </table>
@@ -83,28 +86,43 @@
         &lsquo;미확인&rsquo;은 한국어가 없다는 뜻이 아니라 이번에 확인하지 않았다는 뜻입니다. 링크가 없는 과정은 공식 주소를 확인하지 못한 것입니다.
       </p>
 
-      
+
       <h2 id="practice">실습 시스템</h2>
+      <p>새 SAP Learning Catalog에서 이 모듈 과정 코드와 연결된 실습 시스템입니다.</p>
       <div class="table-wrap">
         <table>
           <thead><tr><th>ID</th><th>시스템</th><th>실행 환경</th><th>실습 가이드</th></tr></thead>
           <tbody><tr>
             <td><code>S4F17</code></td>
-            <td>Asset Accounting in SAP S/4HANA</td>
+            <td><a href="https://learning.sap.com/practice-systems/asset-accounting-in-sap-s-4hana" target="_blank" rel="noopener">Asset Accounting in SAP S/4HANA</a></td>
             <td>SAP S/4HANA 2023</td>
             <td><span class="badge badge-ko">한국어 있음</span></td>
           </tr></tbody>
         </table>
       </div>
       <div class="note note-warn">
-        실행 환경은 <strong>SAP S/4HANA 2023</strong>입니다. 실제 운영 환경과 릴리스가 다를 수 있습니다.
-        실습은 조작과 프로세스 학습용이며 운영 환경 검증을 대신하지 않습니다.
+        Catalog에 보인다는 사실은 <strong>실습 시스템이 등록돼 있다는 뜻</strong>입니다. 현재 SAP Learning Hub 계정에서 Enroll이 실제로 되는지,
+        실행 환경과 릴리스가 무엇인지는 각 링크에서 다시 확인해야 합니다. 실습은 운영 환경 검증을 대신하지 않습니다.
       </div>
       <p>등록 조건은 <a href="../access.html">계정 · 실습</a>에서 확인하십시오.</p>
 
-      
+
       <h2 id="notes">알아둘 것</h2>
       <ul><li>설비보전의 <strong>Asset Management(EAM)</strong>와 이름만 비슷하고 전혀 다르다. <code>LSC00977</code>로 가면 안 된다.</li><li>자산회계만 담당한다면 <code>S4F17</code> 하나(1,323분)만 봐도 된다.</li></ul>
+
+
+      <h2 id="certification">관련 Certification</h2>
+      <p>Catalog에서 이 모듈과 직접 연결된 공식 Certification입니다. 과정 이수와 Certification 취득은 별개이며, 운영 권한이나 사내 자격을 자동으로 부여하지 않습니다.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>ID · Exam</th><th>공식 Certification</th><th>대상 역할</th></tr></thead>
+          <tbody><tr>
+            <td><code>C_TS4FI</code><br><code>C_TS4FI_2601</code></td>
+            <td><a href="https://learning.sap.com/certifications/sap-certified-associate-sap-s-4hana-for-financial-accounting" target="_blank" rel="noopener">SAP Certified - SAP S/4HANA Cloud Private Edition, Financial Accounting</a></td>
+            <td>consultant</td>
+          </tr></tbody>
+        </table>
+      </div>
 
       <h2 id="next">다음</h2>
       <div class="rel-grid">
@@ -134,6 +152,7 @@
           <li><a href="../index.html#modules">모듈별 찾기</a></li>
           <li><a href="../custom-reports.html">ABAP · RAP 학습</a></li>
           <li><a href="../conversion.html">System Conversion</a></li>
+          <li><a href="../catalog.html">전체 카탈로그</a></li>
         </ul>
       </div>
       <div class="foot-col">
@@ -153,12 +172,12 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <p>모든 과정 정보는 <strong>2026-09-02</strong> 기준으로 SAP 공식 페이지에서 확인한 것입니다. 확인하지 않은 항목은 &lsquo;미확인&rsquo;으로 표시했습니다.</p>
+      <p>과정 정보는 <strong>2026-09-03</strong> 기준 SAP 공식 페이지와 SAP Learning Hub에서 다운로드한 Catalog XML에서 확인했습니다. 확인하지 않은 항목은 &lsquo;미확인&rsquo;으로 표시했습니다.</p>
       <p>비공식 학습 링크 모음이며 SAP SE의 공식 사이트가 아닙니다. SAP 및 관련 제품명은 SAP SE 또는 계열사의 상표입니다.</p>
     </div>
   </div>
 </footer>
 
-<script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/site.js?v=20260903" defer></script>
 </body>
 </html>
