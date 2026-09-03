@@ -13,7 +13,7 @@ HTML에는 회사의 프로젝트 현황, 대상 릴리스, 물량, 계정 수, 
 ├─ modules/*.html          모듈별 상세 14개
 ├─ custom-reports.html     ABAP · CDS · RAP 공식 학습경로
 ├─ conversion.html         System Conversion 공식 학습자료
-├─ access.html             이용 채널 · 교재 · 실습 · 한국어 안내
+├─ access.html             이용 채널 · 교재 · 한국어 안내
 ├─ catalog.html            영어·한국어 전체 Catalog 검색
 ├─ start.html              시작하기
 ├─ assets/css/site.css     스타일 1개
@@ -36,7 +36,14 @@ HTML을 직접 고치지 말고 `build.mjs`의 데이터를 고친 뒤 다시 �
 node build.mjs
 ```
 
-모듈 구성은 `build.mjs` 상단의 `MODULES` / `ABAP_CHAIN` 배열에 있다. 과정 코드와 연결된 최신 제목·시간·레벨·설명·공식 URL·locale variant·Practice System·Certification은 빌드 시 `../sap_private_cloud_training/catalogs/sap_learning_catalog_selected.csv`에서 읽는다. 전체 Catalog 페이지는 `../sap_private_cloud_training/catalogs/sap_learning_catalog_full.xml`의 영어 기본 항목과 한국어 variant를 사용한다.
+모듈 구성은 `build.mjs` 상단의 `MODULES` / `ABAP_CHAIN` 배열에 있다. 과정 코드와 연결된 최신 제목·시간·레벨·설명·공식 URL·locale variant·Certification은 빌드 시 `../sap_private_cloud_training/catalogs/sap_learning_catalog_selected.csv`에서 읽는다.
+
+모듈 페이지(`모듈 과정`)에 보이는 Learning Journey·과정 설명은 SAP 공식 Catalog 영문 description을 한국어로 옮긴 것이다. 번역문은 `build.mjs`의 `KO_DESC` 대응표에 과정 ID별로 있다. 여기에 없는 ID는 Catalog 영문을 그대로 쓴다.
+
+전체 Catalog 페이지는 `../sap_private_cloud_training/catalogs/sap_learning_catalog_full.xml`의 영어 기본 항목과 한국어 variant를 사용한다.
+
+SAP 실습 시스템(Practice System)은 사이트 어디에도 싣지 않는다. 실습은 사내망 시스템에서 하기 때문이다.
+다만 `catalog.html`(전체 카탈로그)은 SAP 공식 Catalog를 그대로 검색하는 페이지라 Practice System 항목이 원본 그대로 남아 있다.
 
 ## 배포
 
@@ -96,6 +103,6 @@ npx serve html
 
 - `learning.sap.com` Direct Link가 있으면 `SAP Learning에서도 이용 가능`, 없으면 `SAP Learning Hub 전용`으로 분류한다.
 - 이 사이트에 정리한 모든 교육과정의 교재는 SAP Learning Hub에서 다운로드 가능한 것으로 사용자가 확인했다.
-- Catalog의 실습 링크 존재와 실제 등록 성공은 구분한다. 확인하지 않은 항목은 `미확인`, 없는 것은 `해당 없음`으로 표시한다.
+- 확인하지 않은 항목은 `미확인`, 없는 것은 `해당 없음`으로 표시한다.
 
 원본 데이터와 근거는 저장소의 `sap_private_cloud_training/` 아래에 있다.
